@@ -1,0 +1,108 @@
+<script>
+
+
+    // var a1 = true && true
+    // var a2 = true && false
+    // var a3 = false && true
+    // var o1 = true || true
+    // var o2 = false || true
+    // var n2 = !false
+    // var n3 = !"Gato"
+    // console.log(a1, a2, a3, o1, o2, n2, n3)
+
+    // var anoNascimento = 2005;
+    // var anoAtual = 2021;
+    // if (anoAtual - anoNascimento < 18) {
+    //     console.log("Proibida a entrada.");
+    // } else {
+    //     console.log("Entrada permitida.");
+    // }
+
+    // var pares = [0, 2, 4, 6, 8, 10];
+    // var impares = [1, 3, 5, 7, 9, 11];
+    // console.log(pares[2] + impares[4]);
+
+
+
+    // var nomes = ["francisco", "Gabriel", "joão", "jose"]
+    // for (var i = 0; i < nomes.length; i++) {
+    //     if (nomes[i].length > 5) {
+    //         console.log(nomes[i]);
+    //     }
+    // }
+
+    // function misteriosa(arrayDeNumeros, n) {
+    //     var arrayResultado = [];
+    //     for (var i = 0; i < arrayDeNumeros.length; i++) {
+    //         if (arrayDeNumeros[i] > n) {
+    //             arrayResultado.push(arrayDeNumeros[i]);
+    //         }
+    //     }
+    //     return arrayResultado;
+    // }
+
+    // Um desenvolvedor criou uma função para retornar a menor idade contida no arrayDeIdades. No entanto, esta função não está funcionando corretamente. Por quê?
+
+    // Pergunta 14
+    // function menorIdade(arrayDeIdades) {
+    //     if (arrayDeIdades.length == 0) return undefined;
+
+    //     var menor = arrayDeIdades[0];
+    //     for (var i = 1; i < arrayDeIdades.length; i++) {
+    //         if (menor < arrayDeIdades[i]) {
+    //             menor = arrayDeIdades[i];
+
+    //         }
+    //         return menor;
+    //     }
+    // }
+
+
+    // function desconhecida() {
+    //     var arrayDeRetorno = [];
+    //     for (var i = 1; i <= 6; i++) {
+    //         var numero = Math.floor(Math.random() * 61);
+    //         arrayDeRetorno.push(numero);
+    //     }
+    //     alert(arrayDeRetorno);
+    // }
+
+    // function listarPersonagens() {
+    //     var pessoas = [
+    //         { nome: 'Josué', papel: 'Peter Pan' },
+    //         { nome: 'Joselayne', papel: 'Wendy' },
+    //         { nome: 'Guilherme', papel: 'Capitão Gancho' },
+    //         { nome: 'Luiza', papel: 'Tinker Bell' }
+    //     ];
+    //     // código a completar
+    // }
+
+    // // for (var i = 0; i < pessoas.length; i++) {
+    // //     console.log('Ator: ' + pessoas.nome);
+    // //     console.log('Papel: ' + pessoas.papel);
+    // // }
+
+    // // pessoas.forEach(pessoa => {
+    // //     console.log('Ator: ' + pessoa.nome);
+    // //     console.log('Papel: ' + pessoa.papel);
+    // // });
+
+    // console.log('Ator:' + pessoas.nome);
+
+    // console.log(' Papel:' + pessoas.papel);
+
+    function maiorNome(arrayDeNomes) {
+        // Se o arrayDeNomes estiver vazio, retornar undefined
+        if (arrayDeNomes.length == 0) return undefined;
+        // Atribuindo o primeiro elemento a variável maior
+        var maior = arrayDeNomes[0];
+        for (let i = 1; i < arrayDeNomes.length; i++) {
+            if (maior.length < arrayDeNomes[i]) {
+                maior = arrayDeNomes[i];
+            }
+        }
+    }
+
+
+
+</script>
